@@ -8,7 +8,7 @@
 
 	submit.addEventListener( 'click', function () {
 		var match, urls = {}, legend = '',
-			value = input.value;
+			value = input.value.trim();
 		while( match = urlPattern.exec( input.value ) ) {
 			urls[ match[ 1 ] ] = true;
 		}
